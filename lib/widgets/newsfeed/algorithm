@@ -1,0 +1,12 @@
+Function CheckInSearch
+    List Destinations
+    Float nearestLocationDistance
+    Destination nearestDestination
+    For Destination in Destinations
+        float destinationDistance = CheckDistance(Destination.location, userLocation)
+        float closer = min(nearestLocationDistance, destinationDistance)
+        if(close != nearestLocationDistance){
+            nearestDestination = Destination
+        }
+    return nearestDestination
+        
